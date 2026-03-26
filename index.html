@@ -2,25 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tenis JS Pro - javilindj</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Tenis JS Pro - Deluxe</title>
+    <!-- Favicon de Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
 </head>
 <body>
+
+    <div id="rotate-device">
+        <div class="text-6xl mb-4">🔄</div>
+        <h2 class="text-xl font-bold">Gira tu dispositivo</h2>
+        <p class="text-blue-400">El tenis se juega mejor en modo horizontal</p>
+    </div>
 
     <div id="ui-overlay">
         <div class="score-board">
             <span id="player-score" class="text-blue-400">0</span>
             <span id="ai-score" class="text-red-400">0</span>
         </div>
-        <div id="start-msg" class="message mt-8 inline-block shadow-2xl">
-            <h1 class="text-4xl font-black mb-4 tracking-tighter italic">NEON TENNIS</h1>
-            <p class="text-lg">¡Llega a 10 puntos para ganar!</p>
-            <div class="controls-hint mb-6">Usa el ratón o desliza tu dedo</div>
-            <button onclick="startGame()" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-10 rounded-full transition-all transform hover:scale-105 active:scale-95 pointer-events-auto shadow-lg shadow-blue-500/50">
-                JUGAR AHORA
+        <div id="start-msg" class="message mt-4 inline-block shadow-2xl">
+            <h1 class="text-2xl md:text-4xl font-black mb-2 tracking-tighter italic uppercase">Neon Tennis</h1>
+            <p class="text-sm md:text-lg opacity-80 mb-4">¡Llega a 10 puntos para ganar!</p>
+            <button onclick="startGame()" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-8 md:py-3 md:px-10 rounded-full transition-all transform active:scale-95 pointer-events-auto shadow-lg shadow-blue-500/40">
+                COMENZAR
             </button>
         </div>
     </div>
@@ -28,7 +34,6 @@
     <canvas id="gameCanvas"></canvas>
 
     <footer>Created by javilindj</footer>
-
-    <script src="scritp.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
